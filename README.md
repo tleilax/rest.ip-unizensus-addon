@@ -11,9 +11,9 @@ The course objects of the following routes are extended:
 
 The extension follows these rules:
 
-1. If unizensus plugin is globally activated and activated for the specific course, the course's **modules** array is extended with another boolean item called **unizensus**.
+1. If **and only if** unizensus plugin is globally activated and activated for the specific course, the course's **modules** array is extended with another boolean item called **unizensus**.
 2. If an unizensus questionaire is currently activate for the specific course, the module item **unizensus** will be **true**.
-3. If (and only if) #2 is true, the course object will be extended with another item called **additional_data** which will have *at least* the array item **unizensus**. This array itself will have two items:
+3. If **and only if** #2 is true, the course object will be extended with another item called **additional_data** which will have *at least* the array item **unizensus**. This array itself will have two items:
     * **type** Either *paper* or *online*
     * **url** *False* if `type = paper`, otherwise the url to the online questionaire
 
